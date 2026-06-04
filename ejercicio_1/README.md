@@ -16,7 +16,7 @@ Este módulo resuelve dos problemas clave de matemáticas discretas y eficiencia
 
 ## Estructura de este Módulo
 
-* `calculadora.py`: Código fuente limpio de la aplicación, exportado directamente desde el entorno de desarrollo.
+* `ejercicio_1/Ejercicio_1.ipynb`: Código fuente limpio de la aplicación, exportado directamente desde el entorno de desarrollo.
 * `evidencias/`: Carpeta que almacena las capturas de pantalla del programa en ejecución.
 
 ---
@@ -59,5 +59,5 @@ El programa cuenta con filtros con bloques `try/except` y condicionales lógicos
 
 ---
 
-## ⏱️ Conclusión del Análisis de Eficiencia (Opción 5)
+## Conclusión del Análisis de Eficiencia (Opción 5)
 Al ejecutar el módulo de comparación de rendimiento, se comprobó que el **enfoque iterativo** es drásticamente superior al recursivo en el manejo de memoria. Mientras que el ciclo `for` calcula factoriales de números grandes en pocos microsegundos sin despeinarse, el método recursivo satura la pila de llamadas del sistema de Python detonando un `RecursionError` debido al desbordamiento de memoria.
