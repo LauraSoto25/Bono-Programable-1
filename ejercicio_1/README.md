@@ -41,6 +41,7 @@ Para demostrar la estabilidad del programa, se ejecutó una prueba real por cada
 * **Datos ingresados:** $n = 5$
 * **Procedimiento en pantalla:** El programa calcula el producto consecutivo desde 1 hasta 5 de forma iterativa.
 * **Resultado obtenido:** `120`
+
 ![Evidencia de la Prueba 1](evidencias/prueba1.png)
 
 ---
@@ -50,6 +51,7 @@ Para demostrar la estabilidad del programa, se ejecutó una prueba real por cada
 * **Datos ingresados:** Total del conjunto ($n$) = 10 | Objetos a seleccionar ($r$) = 3
 * **Procedimiento en pantalla:** El programa calcula la resta del denominador ($10 - 3 = 7$) y muestra gráficamente cómo simplifica la división de $10!$ entre $7!$.
 * **Resultado obtenido:** `720`
+  
 ![Evidencia de la Prueba 2](evidencias/prueba2.png)
 
 ---
@@ -59,6 +61,7 @@ Para demostrar la estabilidad del programa, se ejecutó una prueba real por cada
 * **Datos ingresados:** Se ingresa el límite superior para evaluar varios factoriales seguidos (por ejemplo: del 1 al 5).
 * **Procedimiento en pantalla:** El programa procesa en bucle cada valor de forma secuencial y despliega los resultados organizados.
 * **Resultados obtenidos:** $1! = 1$, $2! = 2$, $3! = 6$, $4! = 24$, $5! = 120$.
+  
 ![Evidencia de la Prueba 3](evidencias/prueba3.png)
 
 ---
@@ -68,6 +71,7 @@ Para demostrar la estabilidad del programa, se ejecutó una prueba real por cada
 * **Datos ingresados:** Casos especiales combinatorios como selección completa ($n=5, r=5$), elemento neutro ($n=8, r=0$) y límites mínimos ($n=1, r=1$).
 * **Procedimiento en pantalla:** Procesa múltiples parejas de $(n, r)$ evaluando tanto la división por $0!$ como los límites inferiores.
 * **Resultados obtenidos:** $P(5,5) = 120$, $P(8,0) = 1$, $P(1,1) = 1$.
+  
 ![Evidencia de la Prueba 4](evidencias/prueba4.png)
 
 ---
@@ -77,6 +81,7 @@ Para demostrar la estabilidad del programa, se ejecutó una prueba real por cada
 * **Datos ingresados:** Un número alto para forzar el cálculo (por ejemplo: $n = 1000$).
 * **Procedimiento en pantalla:** Lanza en paralelo el motor **Iterativo** y el **Recursivo**, activando los contadores del módulo `time` y `sys` para medir los microsegundos de ejecución.
 * **Resultado obtenido:** El método iterativo resuelve en pocos microsegundos, mientras que el recursivo satura la pila de llamadas disparando de forma controlada el error de desbordamiento (*Stack Overflow*).
+
 ![Evidencia de la Prueba 5](evidencias/prueba5.png)
 ---
 
