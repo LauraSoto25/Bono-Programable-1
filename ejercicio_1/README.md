@@ -1,6 +1,6 @@
 # Ejercicio 1: Calculadora de Factoriales y Permutaciones
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LauraSoto25/tu-repositorio/blob/main/ejercicio_1/Ejercicio_1.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LauraSoto25/Bono-Programable-1/blob/main/ejercicio_1/Ejercicio_1.ipynb)
 
 Toda la fundamentación matemática (títulos, fórmulas, descripciones teóricas y conclusiones de rendimiento) está documentada al detalle dentro de este cuaderno interactivo. Puedes abrirlo, revisarlo y ejecutarlo directamente haciendo clic en el botón de arriba.
 
