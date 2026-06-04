@@ -35,27 +35,27 @@ El código de este ejercicio está estructurado en módulos independientes dentr
 
 Para demostrar la estabilidad del programa y comprobar los casos obligatorios del laboratorio, se realizaron las siguientes pruebas en la consola de Colab:
 
-### Prueba 1: Caso Base $P(10, 3)$
+### Prueba 1: $P(10, 3)$
 * **Entrada:** Opción 2 | $n = 10, r = 3$
 * **Resultado:** `720`
 ![Evidencia de la Prueba 1](evidencias/prueba1.png)
 
-### Prueba 2: Caso de Enteros Grandes $P(20, 5)$
+### Prueba 2: $P(20, 5)$
 * **Entrada:** Opción 2 | $n = 20, r = 5$
 * **Resultado:** `1860480`
 ![Evidencia de la Prueba 2](evidencias/prueba2.png)
 
-### Prueba 3: Selección Completa del Grupo $P(5, 5)$
+### Prueba 3: $P(5, 5)$
 * **Entrada:** Opción 2 | $n = 5, r = 5$
 * **Resultado:** `120` *(Demuestra que $P(5,5)$ equivale al factorial puro $5!$, ya que el denominador se convierte en $0! = 1$)*.
 ![Evidencia de la Prueba 3](evidencias/prueba3.png)
 
-### Prueba 4: Caso del Elemento Neutro $P(8, 0)$
+### Prueba 4: $P(8, 0)$
 * **Entrada:** Opción 2 | $n = 8, r = 0$
 * **Resultado:** `1` *(Validación correcta: solo hay una forma de ordenar cero objetos)*.
 ![Evidencia de la Prueba 4](evidencias/prueba4.png)
 
-### Prueba 5: Valores Mínimos $P(1, 1)$
+### Prueba 5: $P(1, 1)$
 * **Entrada:** Opción 2 | $n = 1, r = 1$
 * **Resultado:** `1`
 ![Evidencia de la Prueba 5](evidencias/prueba5.png)
