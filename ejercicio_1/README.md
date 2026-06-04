@@ -93,6 +93,7 @@ El código está blindado para evitar caídas o errores en la terminal mediante 
 Si se ingresan letras, espacios vacíos o caracteres inválidos, el programa detecta la excepción de valor (`ValueError`), evita que la terminal colapse, despliega un mensaje de advertencia y reinicia el bucle de captura de datos de forma segura.
 
 * **Resultado esperado:** Mensaje en consola `Por favor, ingresa solo números enteros.`
+  
 ![Evidencia Validación Alfabética](evidencias/prueba6.png)
 
 ---
@@ -101,4 +102,5 @@ Si se ingresan letras, espacios vacíos o caracteres inválidos, el programa det
 El sistema evalúa los datos antes de operar y bloquea de inmediato valores negativos o combinaciones imposibles en la combinatoria (como intentar sacar un subgrupo $r$ que sea mayor al total del conjunto $n$).
 
 * **Resultado esperado:** Mensaje en consola `Asegúrate de que ambos sean positivos y que 'r' sea menor o igual que 'n'.`
+  
 ![Evidencia Validación Matemática](evidencias/prueba7.png)
