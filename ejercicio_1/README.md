@@ -17,7 +17,6 @@ Este módulo resuelve dos problemas clave de matemáticas discretas y eficiencia
 ## Estructura de este Módulo
 
 * `calculadora.py`: Código fuente limpio de la aplicación, exportado directamente desde el entorno de desarrollo.
-* Archivo de cuaderno.
 * `evidencias/`: Carpeta que almacena las capturas de pantalla del programa en ejecución.
 
 ---
