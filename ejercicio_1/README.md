@@ -31,35 +31,53 @@ El código de este ejercicio está estructurado en módulos independientes dentr
 
 ---
 
-## Evidencias de Pruebas Ejecutadas
+## Evidencias de Pruebas 
 
-Para demostrar la estabilidad del programa y comprobar los casos obligatorios del laboratorio, se realizaron las siguientes pruebas en la consola de Colab:
+Para demostrar la estabilidad del programa, se ejecutó una prueba real por cada una de las opciones disponibles en el menú interactivo, organizadas secuencialmente:
 
-### Prueba 1: $P(10, 3)$
-* **Entrada:** Opción 2 | $n = 10, r = 3$
-* **Resultado:** `720`
+
+### Prueba 1: Caso Factorial de un Número ($n!$)
+* **Opción seleccionada en el menú:** Opción 1 (Calcular el factorial de un número)
+* **Datos ingresados:** $n = 5$
+* **Procedimiento en pantalla:** El programa calcula el producto consecutivo desde 1 hasta 5 de forma iterativa.
+* **Resultado obtenido:** `120`
 ![Evidencia de la Prueba 1](evidencias/prueba1.png)
 
-### Prueba 2: $P(20, 5)$
-* **Entrada:** Opción 2 | $n = 20, r = 5$
-* **Resultado:** `1860480`
+---
+
+### Prueba 2: Caso Permutación Individual $P(10, 3)$
+* **Opción seleccionada en el menú:** Opción 2 (Calcular una Permutación (P(n,r)))
+* **Datos ingresados:** Total del conjunto ($n$) = 10 | Objetos a seleccionar ($r$) = 3
+* **Procedimiento en pantalla:** El programa calcula la resta del denominador ($10 - 3 = 7$) y muestra gráficamente cómo simplifica la división de $10!$ entre $7!$.
+* **Resultado obtenido:** `720`
 ![Evidencia de la Prueba 2](evidencias/prueba2.png)
 
-### Prueba 3: $P(5, 5)$
-* **Entrada:** Opción 2 | $n = 5, r = 5$
-* **Resultado:** `120` *(Demuestra que $P(5,5)$ equivale al factorial puro $5!$, ya que el denominador se convierte en $0! = 1$)*.
+---
+
+### Prueba 3: Caso de Múltiples Factoriales en Bloque
+* **Opción seleccionada en el menú:** Opción 3 (Calcular múltiples factoriales)
+* **Datos ingresados:** Se ingresa el límite superior para evaluar varios factoriales seguidos (por ejemplo: del 1 al 5).
+* **Procedimiento en pantalla:** El programa procesa en bucle cada valor de forma secuencial y despliega los resultados organizados.
+* **Resultados obtenidos:** $1! = 1$, $2! = 2$, $3! = 6$, $4! = 24$, $5! = 120$.
 ![Evidencia de la Prueba 3](evidencias/prueba3.png)
 
-### Prueba 4: $P(8, 0)$
-* **Entrada:** Opción 2 | $n = 8, r = 0$
-* **Resultado:** `1` *(Validación correcta: solo hay una forma de ordenar cero objetos)*.
+---
+
+### Prueba 4: Caso Especial de Múltiples Permutaciones $P(5,5)$, $P(8,0)$ y $P(1,1)$
+* **Opción seleccionada en el menú:** Opción 4 (Calcular multiples permutaciones (P(n,r)))
+* **Datos ingresados:** Casos especiales combinatorios como selección completa ($n=5, r=5$), elemento neutro ($n=8, r=0$) y límites mínimos ($n=1, r=1$).
+* **Procedimiento en pantalla:** Procesa múltiples parejas de $(n, r)$ evaluando tanto la división por $0!$ como los límites inferiores.
+* **Resultados obtenidos:** $P(5,5) = 120$, $P(8,0) = 1$, $P(1,1) = 1$.
 ![Evidencia de la Prueba 4](evidencias/prueba4.png)
 
-### Prueba 5: $P(1, 1)$
-* **Entrada:** Opción 2 | $n = 1, r = 1$
-* **Resultado:** `1`
-![Evidencia de la Prueba 5](evidencias/prueba5.png)
+---
 
+### Prueba 5: Caso de Comparativa de Eficiencia y Rendimiento
+* **Opción seleccionada en el menú:** Opción 5 (Comparar tiempo de ejecución (Iterativo vs Recursivo))
+* **Datos ingresados:** Un número alto para forzar el cálculo (por ejemplo: $n = 1000$).
+* **Procedimiento en pantalla:** Lanza en paralelo el motor **Iterativo** y el **Recursivo**, activando los contadores del módulo `time` y `sys` para medir los microsegundos de ejecución.
+* **Resultado obtenido:** El método iterativo resuelve en pocos microsegundos, mientras que el recursivo satura la pila de llamadas disparando de forma controlada el error de desbordamiento (*Stack Overflow*).
+![Evidencia de la Prueba 5](evidencias/prueba5.png)
 ---
 
 ## Control de Errores y Validaciones
