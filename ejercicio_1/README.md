@@ -4,11 +4,11 @@
 
 >  Toda la fundamentación matemática (títulos, fórmulas, descripciones teóricas y conclusiones de rendimiento) está documentada al detalle dentro de este cuaderno interactivo. Puede revisarlo directamente aquí en GitHub haciendo clic en el botón de **"View Notebook"** de arriba; si desea ejecutar el código, la plataforma le habilitará la opción de abrirlo en el entorno de Google Colab.
 
-## Resumen del Ejercicio
+## Resumen del ejercicio
 
-Este módulo resuelve dos problemas clave de matemáticas discretas y eficiencia de software:
-1. **Conteo Combinatorio:** Cálculo visual y exacto de $k$-permutaciones bajo la fórmula $P(n, r) = \frac{n!}{(n-r)!}$, controlando el flujo para evitar divisiones por cero o ingresos de datos inválidos.
-2. **Análisis de Rendimiento:** Un experimento empírico que mide en microsegundos el rendimiento de la aproximación **Iterativa (ciclo For)** contra la **Recursiva**, evidenciando los límites físicos de la memoria de la computadora (*Stack Overflow*).
+Este ejercicio está dividido en dos partes principales:
+1. **La Calculadora:** Un menú interactivo que procesa tanto el factorial puro de un número ($n!$) como la fórmula de permutaciones $P(n, r) = \frac{n!}{(n-r)!}$, validando de forma estricta las entradas para evitar errores matemáticos, números negativos o el ingreso de letras.
+2. **La Comparativa:** Una prueba de eficiencia que calcula el tiempo exacto en microsegundos de dos enfoques (iterativo vs. recursivo), demostrando de forma práctica las ventajas de optimizar el uso de la memoria en Python ante números grandes.
 
 ---
 
