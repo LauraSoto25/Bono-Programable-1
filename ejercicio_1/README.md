@@ -1,29 +1,41 @@
 # Ejercicio 1: Calculadora de Factoriales y Permutaciones
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/LauraSoto25/Bono-Programable-1/blob/main/ejercicio_1/Ejercicio_1.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LauraSoto25/tu-repositorio/blob/main/ejercicio_1/Ejercicio_1.ipynb)
 
-Toda la fundamentación matemática detallada (títulos, fórmulas y descripciones teóricas) se encuentra explicada paso a paso dentro del cuaderno interactivo de Colab. Puedes ejecutar y revisar el reporte completo haciendo clic en el botón de arriba.
+Toda la fundamentación matemática (títulos, fórmulas, descripciones teóricas y conclusiones de rendimiento) está documentada al detalle dentro de este cuaderno interactivo. Puedes abrirlo, revisarlo y ejecutarlo directamente haciendo clic en el botón de arriba.
 
 ---
 
 ## Resumen del Ejercicio
 
-Este módulo resuelve dos problemas clave de matemáticas discretas y eficiencia de código:
-1. **Conteo Combinatorio:** Cálculo visual y exacto de $k$-permutaciones bajo la fórmula $P(n, r) = \frac{n!}{(n-r)!}$, controlando que no ocurran divisiones por cero o ingresos de datos inválidos.
+Este módulo resuelve dos problemas clave de matemáticas discretas y eficiencia de software:
+1. **Conteo Combinatorio:** Cálculo visual y exacto de $k$-permutaciones bajo la fórmula $P(n, r) = \frac{n!}{(n-r)!}$, controlando el flujo para evitar divisiones por cero o ingresos de datos inválidos.
 2. **Análisis de Rendimiento:** Un experimento empírico que mide en microsegundos el rendimiento de la aproximación **Iterativa (ciclo For)** contra la **Recursiva**, evidenciando los límites físicos de la memoria de la computadora (*Stack Overflow*).
 
 ---
 
-## Estructura de este Módulo
+## Instrucciones de Ejecución en Google Colab
 
-* `ejercicio_1/Ejercicio_1.ipynb`: Código fuente limpio de la aplicación, exportado directamente desde el entorno de desarrollo.
-* `evidencias/`: Carpeta que almacena las capturas de pantalla del programa en ejecución.
+El código de este ejercicio está estructurado en módulos independientes dentro del cuaderno `Ejercicio_1.ipynb`. Para ejecutar la aplicación correctamente, siga estos pasos:
+
+1. Dé clic en el botón **Open In Colab** ubicado en la parte superior de esta portada.
+2. Una vez abra el entorno de Colab, vaya a la sección **`4. Codigo Funcional`**.
+3. Ejecute primero el bloque de celdas bajo el subtítulo **`Funciones`** (esto cargará los motores matemáticos, validaciones y librerías `time` y `sys` en la memoria del entorno).
+4. Posteriormente, ejecute la celda bajo el subtítulo **`Programa Principal`** (la cual invoca la función maestra `calculadora()`).
+5. Interactúe con el menú numérico (opciones 0 a 5) directamente desde la consola interactiva que se desplegará en la parte inferior de la celda.
+
+---
+
+## Estructura de este Módulo en GitHub
+
+* `Ejercicio_1.ipynb`: Cuaderno de desarrollo completo con el reporte y el código segmentado en bloques.
+* `evidencias/`: Carpeta que almacena las capturas de pantalla del programa en ejecución para la verificación del laboratorio.
 
 ---
 
 ## Evidencias de Pruebas Ejecutadas
 
-Para demostrar la estabilidad del programa y comprobar los casos obligatorios del laboratorio, se realizaron las siguientes pruebas en la terminal:
+Para demostrar la estabilidad del programa y comprobar los casos obligatorios del laboratorio, se realizaron las siguientes pruebas en la consola de Colab:
 
 ### Prueba 1: Caso Base $P(10, 3)$
 * **Entrada:** Opción 2 | $n = 10, r = 3$
@@ -54,10 +66,5 @@ Para demostrar la estabilidad del programa y comprobar los casos obligatorios de
 
 ## Control de Errores y Validaciones
 El programa cuenta con filtros con bloques `try/except` y condicionales lógicos para evitar caídas:
-* Evita el ingreso de letras o caracteres vacíos relanzando la solicitud del dato.
+* Evita el ingreso de letras o caracteres vacíos relanzando la solicitud del dato sin romper el ciclo.
 * Bloquea combinaciones matemáticamente imposibles (como valores negativos o casos donde $r > n$).
-
----
-
-## Conclusión del Análisis de Eficiencia (Opción 5)
-Al ejecutar el módulo de comparación de rendimiento, se comprobó que el **enfoque iterativo** es drásticamente superior al recursivo en el manejo de memoria. Mientras que el ciclo `for` calcula factoriales de números grandes en pocos microsegundos sin despeinarse, el método recursivo satura la pila de llamadas del sistema de Python detonando un `RecursionError` debido al desbordamiento de memoria.
