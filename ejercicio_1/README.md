@@ -63,6 +63,6 @@ Para demostrar la estabilidad del programa y comprobar los casos obligatorios de
 ---
 
 ## Control de Errores y Validaciones
-El programa cuenta con filtros con bloques `try/except` y condicionales lógicos para evitar caídas:
-* Evita el ingreso de letras o caracteres vacíos relanzando la solicitud del dato sin romper el ciclo.
-* Bloquea combinaciones matemáticamente imposibles (como valores negativos o casos donde $r > n$).
+El código está blindado para evitar caídas o errores en la terminal mediante dos filtros principales:
+* **Evita datos inválidos:** Si se ingresan letras o caracteres invalidos, el programa detecta el error y pide ingresar el número otra vez.
+* **Control matemático:** Detecta valores negativos y combinaciones imposibles (como intentar sacar un subgrupo $r$ que sea mayor al total $n$).
