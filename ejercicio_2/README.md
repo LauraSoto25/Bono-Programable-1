@@ -28,11 +28,11 @@ El código de este ejercicio está estructurado en bloques lógicos. Para ejecut
 
 ## Evidencias de Pruebas
 
-Para demostrar la estabilidad y precisión del sistema, se ejecutó una prueba real por cada escenario de configuración:
+Para demostrar la estabilidad y precisión del sistema, se ejecutó una prueba real por cada una de las opciones disponibles en el menú, organizadas secuencialmente:
 
-### Prueba 1: 
+### Prueba 1:
 * **Opción seleccionada:** Opción 1 (Caracteres predeterminados)
-* **Datos:** Longitud $n=4$, Alfabeto base=6, Repetición=Sí, Obligatorio=Dígitos.
+* **Datos:** Longitud $n=4$, Alfabeto base=6, Repetición=Sí, Mayúsculas=No, Dígitos=Sí, Símbolos=No.
 * **Resultado:** `64,240` combinaciones válidas.
 ![Evidencia Prueba 1](evidencias/prueba1.png)
 
@@ -40,31 +40,31 @@ Para demostrar la estabilidad y precisión del sistema, se ejecutó una prueba r
 
 ### Prueba 2:
 * **Opción seleccionada:** Opción 1 (Caracteres predeterminados)
-* **Datos:** Longitud $n=3$, Obligatorio=Mayúsculas y Dígitos.
-* **Resultado:** `43,680` combinaciones válidas tras limpiar solapamientos.
+* **Datos:** Longitud $n=3$, Alfabeto base=10, Repetición=Sí, Mayúsculas=Sí, Dígitos=Sí, Símbolos=No.
+* **Resultado:** `43,680` combinaciones válidas.
 ![Evidencia Prueba 2](evidencias/prueba2.png)
 
 ---
 
-### Prueba 3: 
+### Prueba 3:
 * **Opción seleccionada:** Opción 1 (Caracteres predeterminados)
-* **Datos:** Longitud $n=3$, Repetición=No, Obligatorio=Mayúsculas.
+* **Datos:** Longitud $n=3$, Alfabeto base=5, Repetición=No, Mayúsculas=Sí, Dígitos=No, Símbolos=No.
 * **Resultado:** `26,910` combinaciones válidas.
 ![Evidencia Prueba 3](evidencias/prueba3.png)
 
 ---
 
-### Prueba 4: 
+### Prueba 4:
 * **Opción seleccionada:** Opción 1 (Caracteres predeterminados)
-* **Datos:** Longitud $n=3$, Obligatorio=Mayús, Dígitos y Símbolos.
-* **Resultado:** `31,200` combinaciones válidas aplicando ajuste triple.
+* **Datos:** Longitud $n=3$, Alfabeto base=2, Repetición=Sí, Mayúsculas=Sí, Dígitos=Sí, Símbolos=Sí.
+* **Resultado:** `31,200` combinaciones válidas.
 ![Evidencia Prueba 4](evidencias/prueba4.png)
 
 ---
 
-### Prueba 5: 
+### Prueba 5:
 * **Opción seleccionada:** Opción 2 (Caracteres personalizados)
-* **Datos:** Longitud $n=4$, Grupos definidos manualmente por el usuario.
+* **Datos:** Longitud $n=4$, Alfabeto base=10, Repetición=Sí, Mayúsculas=No, Dígitos=Sí (tamaño 5), Símbolos=Sí (tamaño 2).
 * **Resultado:** `50,040` combinaciones válidas.
 ![Evidencia Prueba 5](evidencias/prueba5.png)
 
