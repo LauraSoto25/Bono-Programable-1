@@ -65,7 +65,7 @@ Para demostrar la estabilidad y precisión del sistema, se ejecutó una prueba r
 ### Prueba 5:
 * **Opción seleccionada:** Opción 2 (Caracteres personalizados)
 * **Datos:** Longitud $n=4$, Alfabeto base=10, Repetición=Sí, Mayúsculas=No, Dígitos=Sí (tamaño 5), Símbolos=Sí (tamaño 2).
-* **Resultado:** `50,040` combinaciones válidas.
+* **Resultado:** `22,160` combinaciones válidas.
 ![Evidencia Prueba 5](evidencias/prueba5.png)
 
 ---
