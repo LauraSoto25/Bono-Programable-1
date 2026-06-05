@@ -57,7 +57,7 @@ Para demostrar la estabilidad y precisión del sistema, se ejecutó una prueba r
 ### Prueba 4:
 * **Opción seleccionada:** Opción 1 (Caracteres predeterminados)
 * **Datos:** Longitud $n=3$, Alfabeto base=2, Repetición=Sí, Mayúsculas=Sí, Dígitos=Sí, Símbolos=Sí.
-* **Resultado:** `31,200` combinaciones válidas.
+* **Resultado:** `15,600` combinaciones válidas.
 ![Evidencia Prueba 4](evidencias/prueba4.png)
 
 ---
