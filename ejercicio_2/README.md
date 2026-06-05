@@ -30,7 +30,7 @@ El código de este ejercicio está estructurado en bloques lógicos. Para ejecut
 
 Para demostrar la estabilidad y precisión del sistema, se ejecutó una prueba real por cada escenario de configuración:
 
-### Prueba 1: Configuración Base con Repetición
+### Prueba 1: 
 * **Opción seleccionada:** Opción 1 (Caracteres predeterminados)
 * **Datos:** Longitud $n=4$, Alfabeto base=6, Repetición=Sí, Obligatorio=Dígitos.
 * **Resultado:** `64,240` combinaciones válidas.
@@ -38,7 +38,7 @@ Para demostrar la estabilidad y precisión del sistema, se ejecutó una prueba r
 
 ---
 
-### Prueba 2: Alta Complejidad (Inclusión-Exclusión)
+### Prueba 2:
 * **Opción seleccionada:** Opción 1 (Caracteres predeterminados)
 * **Datos:** Longitud $n=3$, Obligatorio=Mayúsculas y Dígitos.
 * **Resultado:** `43,680` combinaciones válidas tras limpiar solapamientos.
@@ -46,7 +46,7 @@ Para demostrar la estabilidad y precisión del sistema, se ejecutó una prueba r
 
 ---
 
-### Prueba 3: Conteo sin Repetición (Permutaciones)
+### Prueba 3: 
 * **Opción seleccionada:** Opción 1 (Caracteres predeterminados)
 * **Datos:** Longitud $n=3$, Repetición=No, Obligatorio=Mayúsculas.
 * **Resultado:** `26,910` combinaciones válidas.
@@ -54,7 +54,7 @@ Para demostrar la estabilidad y precisión del sistema, se ejecutó una prueba r
 
 ---
 
-### Prueba 4: Triple Restricción Simultánea
+### Prueba 4: 
 * **Opción seleccionada:** Opción 1 (Caracteres predeterminados)
 * **Datos:** Longitud $n=3$, Obligatorio=Mayús, Dígitos y Símbolos.
 * **Resultado:** `31,200` combinaciones válidas aplicando ajuste triple.
@@ -62,7 +62,7 @@ Para demostrar la estabilidad y precisión del sistema, se ejecutó una prueba r
 
 ---
 
-### Prueba 5: Extensión de Grupos Personalizados
+### Prueba 5: 
 * **Opción seleccionada:** Opción 2 (Caracteres personalizados)
 * **Datos:** Longitud $n=4$, Grupos definidos manualmente por el usuario.
 * **Resultado:** `50,040` combinaciones válidas.
